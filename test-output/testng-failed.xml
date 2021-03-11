@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="TC_SearchCustomerByEmail_004(failed)" parallel="tests">
+    <classes>
+      <class name="com.nopcommerce.testCases.TC_SearchCustomerByEmail_004">
+        <methods>
+          <include name="searchCustomerByEmail"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testCases.TC_SearchCustomerByEmail_004 -->
+    </classes>
+  </test> <!-- TC_SearchCustomerByEmail_004(failed) -->
+</suite> <!-- Failed suite [Suite] -->
